@@ -66,16 +66,41 @@ public class App {
         Scanner scanner = new Scanner(System.in);
 
         //Complete basic task below:
-
-
-
+        System.out.println("Give a number:");
+        int number = Integer.valueOf(scanner.nextLine());
+        if (number%2==0){
+            System.out.println("Number was even.");
+        } else {
+            System.out.println("Number was odd.");
+        }
 
         //Complete moderate task below:
-
-
-
-
+        if (number%3==0 && number%5==0){
+            System.out.println("The number was divisible by 3 and 5");
+        } else if (number%3==0){
+            System.out.println("The number was divisible by 3");
+        } else if (number%5==0){
+            System.out.println("The number was divisible by 5");
+        } else {
+            System.out.println("The number is not divisible by 3 or 5");
+//           
+//   Challenge task (up to A+ level): Complete both of the above AND check to see if the number 
+//  *  is greater than 0 and less than 100. If the number is less than 0 or above 100, say "Wrong number!".
+//  *  If the number is between 0 and 100, check to see if it is a prime number. A prime number less than
+//  *  100 should be divisible by itself and 1 but not by 2, 3, 5, or 7.
+        }
         //Complete challenge task below:
+        if (number>100 || number<0){
+            System.out.println("Wrong number!");
+        } else {
+            if (number==2 || number==3|| number==5 || number==7){
+                System.out.println("The number was prime.");
+            }else if (number%2==0 || number%3==0 || number%5==0 || number%7==0){
+                System.out.println("The number was not prime.");
+            } else {
+                System.out.println("The number was prime.");
+            }
+        }
 
 
         
